@@ -2,10 +2,13 @@ package moviesearchapp;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import java.awt.event.ActionEvent;
+import java.io.BufferedReader;
 import java.util.ArrayList;
 import javax.swing.*;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -47,6 +50,23 @@ public class MovieSearchApp extends JFrame {
             ds.setUser(props.getProperty("mysql.username"));
             ds.setPassword(props.getProperty("mysql.password"));
 
+//            String textFileName = "dvd_titles.sql";
+//            BufferedReader br = new BufferedReader(new FileReader(textFileName, StandardCharsets.UTF_8));
+//            
+//            var sb = new StringBuilder();
+//
+//            String line;
+//            while ((line = br.readLine()) != null) {
+//
+//                sb.append(line);
+//                sb.append(System.lineSeparator());
+//            }
+//            
+//            String query = (sb.toString());
+//            Connection con = ds.getConnection();
+//            PreparedStatement pst = con.prepareStatement(query);
+//            pst.executeQuery();
+            
             String query = ("SELECT * FROM movies");
             //create jdbc connection object data source
             Connection con = ds.getConnection();
