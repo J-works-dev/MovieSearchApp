@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateDescriptor baseUrl="">
+  <entry targetMediaFileId="26" updatableVersionMin="" updatableVersionMax="" fileName="DVDApp_windows-x64_1_0.exe" newVersion="1.0" newMediaFileId="26" fileSize="52507648" md5Sum="8f8a6b4fbb434bd063ce867c2938e254" sha256Sum="78a7f2cace59bcf826a67bf428f25abbcf068ac615a10666a7869947c1454462" bundledJre="windows-amd64-15.0.2.tar.gz" archive="false" singleBundle="false">
+    <comment language="en" />
+  </entry>
+</updateDescriptor>

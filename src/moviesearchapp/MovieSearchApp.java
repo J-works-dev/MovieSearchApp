@@ -38,11 +38,8 @@ public class MovieSearchApp extends JFrame {
 
         try {
             Properties props = new Properties();
-            //Locate text properties file
-            String fileName = "config.properties";//in local folder of package
-            FileInputStream fis = new FileInputStream(fileName);
             //load the content of properties into java.util.Properties class
-            props.load(fis);
+            props.load(this.getClass().getClassLoader().getResourceAsStream("resources/config.properties"));
             //A MysqlDataSource is created
             MysqlDataSource ds = new MysqlDataSource();
             //datasource properties are set

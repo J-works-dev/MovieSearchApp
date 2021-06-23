@@ -1,0 +1,31 @@
+@startuml
+class com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+class java.awt.event.ActionEvent
+class java.io.BufferedReader
+class java.io.FileInputStream
+class java.io.FileReader
+class java.io.IOException
+class java.nio.charset.StandardCharsets
+class java.sql.Connection
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.util.ArrayList
+class java.util.Properties
+class moviesearchapp.JFrame
+class moviesearchapp.MovieSearchApp
+moviesearchapp.MovieSearchApp ..> com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+moviesearchapp.MovieSearchApp ..> java.awt.event.ActionEvent
+moviesearchapp.MovieSearchApp ..> java.io.BufferedReader
+moviesearchapp.MovieSearchApp ..> java.io.FileInputStream
+moviesearchapp.MovieSearchApp ..> java.io.FileReader
+moviesearchapp.MovieSearchApp ..> java.io.IOException
+moviesearchapp.MovieSearchApp ..> java.nio.charset.StandardCharsets
+moviesearchapp.MovieSearchApp ..> java.sql.Connection
+moviesearchapp.MovieSearchApp ..> java.sql.PreparedStatement
+moviesearchapp.MovieSearchApp ..> java.sql.ResultSet
+moviesearchapp.MovieSearchApp ..> java.sql.SQLException
+moviesearchapp.MovieSearchApp ..> java.util.ArrayList
+moviesearchapp.MovieSearchApp ..> java.util.Properties
+moviesearchapp.MovieSearchApp --|> moviesearchapp.JFrame
+@enduml
